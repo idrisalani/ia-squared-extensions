@@ -5,80 +5,102 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TextOracle AI — Privacy Policy</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 720px; margin: 0 auto; padding: 40px 24px; color: #1e293b; line-height: 1.7; }
-  h1 { color: #0d9488; font-size: 28px; margin-bottom: 4px; }
-  h2 { color: #0f172a; font-size: 18px; margin-top: 32px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; }
-  p, li { color: #374151; font-size: 15px; }
-  .updated { color: #64748b; font-size: 14px; margin-bottom: 32px; }
-  a { color: #0d9488; }
-  ul { padding-left: 20px; }
-  .highlight { background: #f0fdf4; border-left: 4px solid #0d9488; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 16px 0; }
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:720px;margin:0 auto;padding:40px 24px;color:#1e293b;line-height:1.7}
+  h1{color:#0d9488;font-size:28px;margin-bottom:4px}
+  h2{color:#0f172a;font-size:18px;margin-top:32px;border-bottom:1px solid #e2e8f0;padding-bottom:8px}
+  p,li{color:#374151;font-size:15px}
+  .updated{color:#64748b;font-size:14px;margin-bottom:32px}
+  a{color:#0d9488}
+  ul{padding-left:20px}
+  .highlight{background:#f0fdf4;border-left:4px solid #0d9488;padding:12px 16px;border-radius:0 8px 8px 0;margin:16px 0}
+  code{background:#f1f5f9;padding:2px 6px;border-radius:4px;font-size:13px}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+  th{background:#f1f5f9;padding:10px;text-align:left;border:1px solid #e2e8f0}
+  td{padding:10px;border:1px solid #e2e8f0;vertical-align:top}
 </style>
 </head>
 <body>
-
 <h1>TextOracle AI — Privacy Policy</h1>
-<p class="updated">Last updated: March 23, 2026</p>
+<p class="updated">Last updated: April 3, 2026</p>
 
 <div class="highlight">
-  <strong>Summary:</strong> TextOracle AI does not collect, store or transmit any personal data to external servers. All your data stays on your device.
+  <strong>Summary:</strong> TextOracle AI does not collect, sell, or share your personal data. All data stays on your device. When you use AI features, text is sent directly to your chosen AI provider (Anthropic or OpenAI) using your own API key.
 </div>
 
-<h2>1. Overview</h2>
-<p>TextOracle AI ("the Extension") is a Chrome browser extension developed by IA Squared Extensions. This Privacy Policy explains what data the Extension accesses, how it is used, and your rights regarding that data.</p>
+<h2>1. Who We Are</h2>
+<p>TextOracle AI is a Chrome browser extension</p>
 
-<h2>2. Data We Do NOT Collect</h2>
-<p>TextOracle AI does <strong>not</strong>:</p>
+<h2>2. What Data We Collect</h2>
+<p>TextOracle AI collects <strong>no personal data</strong> on our servers. The extension stores the following data <strong>locally on your device only</strong> using <code>chrome.storage.local</code>:</p>
+
+<table>
+<tr><th>Data Type</th><th>What It Is</th><th>Why We Store It</th><th>Shared?</th></tr>
+<tr><td>Settings</td><td>Language, tone, theme, feature toggles</td><td>Remember your preferences between sessions</td><td>Never</td></tr>
+<tr><td>API Key</td><td>Your Anthropic or OpenAI API key (if provided)</td><td>Authenticate AI requests on your behalf</td><td>Never — only sent to your chosen AI provider</td></tr>
+<tr><td>License Key</td><td>Your Pro subscription license key</td><td>Verify your Pro subscription status</td><td>Sent to Creem.io for validation only</td></tr>
+<tr><td>Writing Memory</td><td>Patterns of corrections you accept/reject</td><td>Personalise suggestions over time</td><td>Never</td></tr>
+<tr><td>Snippet Library</td><td>Templates and phrases you save</td><td>Allow quick insertion while writing</td><td>Never</td></tr>
+<tr><td>Daily Counts</td><td>Number of AI checks used today</td><td>Enforce free plan limits</td><td>Never</td></tr>
+<tr><td>Writing Goals</td><td>Your target clarity, audience, word count</td><td>Power the Writing Goals feature</td><td>Never</td></tr>
+<tr><td>Style Guide</td><td>Banned words, brand voice settings</td><td>Power the Custom Style Guide feature</td><td>Never</td></tr>
+</table>
+
+<h2>3. Data We Do NOT Collect</h2>
 <ul>
-  <li>Collect or transmit your personal information to any server operated by us</li>
-  <li>Track your browsing history or behaviour across websites</li>
-  <li>Store the text you type or have checked</li>
-  <li>Share any data with third parties for advertising or analytics</li>
-  <li>Use cookies or any form of tracking technology</li>
+  <li>We do <strong>not</strong> collect or store the text you type or have checked</li>
+  <li>We do <strong>not</strong> track your browsing history or which websites you visit</li>
+  <li>We do <strong>not</strong> collect your name, email address or any personally identifiable information</li>
+  <li>We do <strong>not</strong> use cookies or any cross-site tracking</li>
+  <li>We do <strong>not</strong> sell, rent or share your data with advertisers or data brokers</li>
+  <li>We do <strong>not</strong> run analytics on your usage behaviour</li>
 </ul>
 
-<h2>3. Data Stored Locally on Your Device</h2>
-<p>The following data is stored exclusively in your browser's local storage (<code>chrome.storage.local</code>) and never leaves your device:</p>
+<h2>4. How We Use Your Data</h2>
+<p>All data stored locally is used solely to operate the extension features you have chosen to enable. Specifically:</p>
 <ul>
-  <li><strong>Settings:</strong> Your preferences such as language, tone, theme and feature toggles</li>
-  <li><strong>API Key:</strong> If you choose to provide your own Anthropic or OpenAI API key, it is stored locally on your device only</li>
-  <li><strong>License Key:</strong> Your Lemon Squeezy Pro license key, stored locally for activation verification</li>
-  <li><strong>Snippet Library:</strong> Prompts and templates you save are stored locally</li>
-  <li><strong>Writing Memory:</strong> Accepted and rejected correction patterns you have personalised, stored locally</li>
-  <li><strong>Usage Counts:</strong> Daily AI check counts to enforce free plan limits, stored locally</li>
+  <li>Settings data is read on startup to restore your preferences</li>
+  <li>Your API key is read only when you initiate an AI check, and is sent only to your chosen provider</li>
+  <li>Writing Memory is read when generating suggestions to personalise them</li>
+  <li>Daily counts are incremented when you use AI features and reset at midnight</li>
 </ul>
 
-<h2>4. AI API Calls</h2>
-<p>When you use AI features (grammar check, tone rewriting, translation, AI composer), the text you submit is sent directly from your browser to your chosen AI provider:</p>
+<h2>5. Third-Party Services</h2>
+<p>When you use AI-powered features, the text you submit is sent directly from your browser to your chosen provider:</p>
 <ul>
-  <li><strong>Anthropic Claude API</strong> (if you use Anthropic) — governed by <a href="https://www.anthropic.com/privacy" target="_blank">Anthropic's Privacy Policy</a></li>
-  <li><strong>OpenAI API</strong> (if you use OpenAI) — governed by <a href="https://openai.com/privacy" target="_blank">OpenAI's Privacy Policy</a></li>
+  <li><strong>Anthropic Claude API</strong> (api.anthropic.com) — if you choose Anthropic as your AI provider. See <a href="https://www.anthropic.com/privacy" target="_blank">Anthropic's Privacy Policy</a>.</li>
+  <li><strong>OpenAI API</strong> (api.openai.com) — if you choose OpenAI as your AI provider. See <a href="https://openai.com/privacy" target="_blank">OpenAI's Privacy Policy</a>.</li>
 </ul>
-<p>These calls are made directly from your browser using your own API key. IA Squared Extensions does not see, intercept or store the content of these requests.</p>
+<p>These requests are made directly from your browser using your own API key. IA Squared Extensions does not route, proxy, intercept or store these requests.</p>
 
-<h2>5. License Activation</h2>
-<p>When you activate a Pro license, the extension communicates with Lemon Squeezy's licensing API (<a href="https://www.lemonsqueezy.com" target="_blank">lemonsqueezy.com</a>) to validate your license key. This sends only your license key to Lemon Squeezy for verification. Their handling of this data is governed by <a href="https://www.lemonsqueezy.com/privacy" target="_blank">Lemon Squeezy's Privacy Policy</a>.</p>
+<h2>6. License Verification</h2>
+<p>When you activate a Pro license, the extension sends your license key to <strong>Creem.io</strong> (www.creem.io) to verify its validity. Only the license key string is transmitted — no personal information. Creem's data handling is governed by <a href="https://www.creem.io/privacy" target="_blank">Creem's Privacy Policy</a>.</p>
 
-<h2>6. Permissions Used</h2>
-<p>TextOracle AI requests the following browser permissions:</p>
+<h2>7. Permissions Explained</h2>
 <ul>
-  <li><strong>storage:</strong> To save your settings and preferences locally on your device</li>
-  <li><strong>tabs:</strong> To detect which platform you are using (Gmail, Twitter, LinkedIn, etc.) so platform-specific writing rules can be applied</li>
-  <li><strong>host_permissions (all URLs):</strong> To inject the writing assistant into any web page where you type, since users write on many different websites</li>
+  <li><strong>storage:</strong> To save your settings, API key, license key and usage data locally on your device</li>
+  <li><strong>tabs:</strong> To open the Analytics, Team Workspace and Snippet Library pages (internal extension pages) when you click the corresponding buttons; and to broadcast theme changes across open tabs</li>
+  <li><strong>host_permissions (api.anthropic.com, api.openai.com, creem.io):</strong> To make API calls directly to your chosen AI provider and to verify your Pro license key. The extension requests only the specific domains it communicates with.</li>
 </ul>
 
-<h2>7. Children's Privacy</h2>
-<p>TextOracle AI is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
+<h2>8. Data Retention and Deletion</h2>
+<p>All data stored by TextOracle AI is kept in your browser's local storage on your device. You can delete all stored data at any time by:</p>
+<ul>
+  <li>Uninstalling the extension (clears all local storage automatically)</li>
+  <li>Going to Chrome Settings → Privacy and Security → Site Settings → Extensions → TextOracle AI → Clear data</li>
+</ul>
 
-<h2>8. Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. We will notify users of significant changes through the Chrome Web Store update mechanism. The date at the top of this page indicates when it was last revised.</p>
+<h2>9. Children's Privacy</h2>
+<p>TextOracle AI is not directed at children under 13. We do not knowingly collect data from children.</p>
 
-<h2>9. Contact</h2>
-<p>If you have any questions about this Privacy Policy or the extension, please contact us at:<br>
-<a href="mailto:idris.adewale.alamutu@gmail.com">idris.adewale.alamutu@gmail.com</a></p>
+<h2>10. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. We will notify users of significant changes through the Chrome Web Store update mechanism. The date at the top indicates when it was last revised.</p>
+
+<h2>11. Contact Us</h2>
+<p>For any questions about this Privacy Policy:<br>
+Email: <a href="mailto:idris.adewale.alamutu@gmail.com">idris.adewale.alamutu@gmail.com</a><br>
+Publisher: IA Squared Extensions</p>
 
 <hr style="margin-top:48px;border-color:#e2e8f0">
 <p style="font-size:13px;color:#94a3b8;text-align:center">© 2026 IA Squared Extensions · TextOracle AI · All rights reserved</p>
-
 </body>
 </html>
