@@ -14,54 +14,130 @@
   ul { padding-left: 20px; }
   .highlight { background: #f0fdf4; border-left: 4px solid #0d9488; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 16px 0; }
   code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  th { background: #f1f5f9; color: #0f172a; text-align: left; padding: 10px 12px; border: 1px solid #e2e8f0; }
+  td { padding: 10px 12px; border: 1px solid #e2e8f0; vertical-align: top; color: #374151; }
+  tr:nth-child(even) td { background: #f8fafc; }
 </style>
 </head>
 <body>
 <h1>PromptVault — Privacy Policy</h1>
-<p class="updated">Last updated: March 23, 2026</p>
+<p class="updated">Last updated: April 14, 2026</p>
+
 <div class="highlight">
-  <strong>Summary:</strong> PromptVault does not collect, store or transmit any personal data to external servers. All your data stays on your device.
+  <strong>Summary:</strong> PromptVault does not collect, store, or transmit any personal data to IA Squared Extensions servers. All user data (prompts, settings, license key) is stored exclusively on your device using <code>chrome.storage.local</code>. The only third-party communications are: (1) direct API calls to your chosen AI provider using your own API key, and (2) license validation with Gumroad when activating a Pro license.
 </div>
+
 <h2>1. Overview</h2>
-<p>PromptVault ("the Extension") is a Chrome browser extension developed by IA Squared Extensions. This Privacy Policy explains what data the Extension accesses, how it is used, and your rights regarding that data.</p>
-<h2>2. Single Purpose</h2>
-<p>PromptVault is a universal AI prompt library that lets users save, search and inject prompts directly into ChatGPT, Claude, Grok, Gemini and Perplexity.</p>
-<h2>3. Data We Do NOT Collect</h2>
-<p>PromptVault does <strong>not</strong>:</p>
+<p>PromptVault ("the Extension") is a Chrome browser extension developed by IA Squared Extensions. This Privacy Policy explains in full what data the Extension accesses, how that data is collected, used, stored, and shared, and what rights you have over your data. This policy applies to all users of the PromptVault Chrome extension.</p>
+
+<h2>2. Single Purpose Statement</h2>
+<p>PromptVault is a universal AI prompt library that allows users to save, organize, search, and inject saved prompts directly into AI platforms including ChatGPT, Claude, Grok, Gemini, and Perplexity. The Extension does not perform any function unrelated to this core purpose.</p>
+
+<h2>3. Data Collection: What We Collect and How</h2>
+<p>IA Squared Extensions does <strong>not</strong> operate any server that collects or receives user data. All data generated or entered by the user is stored locally on their device only, using the browser's built-in <code>chrome.storage.local</code> API. The following data types are stored locally:</p>
+
+<table>
+  <tr>
+    <th>Data Type</th>
+    <th>What It Contains</th>
+    <th>Why It Is Stored</th>
+    <th>Where It Is Stored</th>
+    <th>Shared With</th>
+  </tr>
+  <tr>
+    <td>Prompt Library</td>
+    <td>Prompt titles, text content, tags, and usage counts entered by the user</td>
+    <td>Core feature: allows users to save and reuse prompts</td>
+    <td>Device only (<code>chrome.storage.local</code>)</td>
+    <td>Nobody</td>
+  </tr>
+  <tr>
+    <td>Settings &amp; Preferences</td>
+    <td>Theme (light/dark), language, feature toggles</td>
+    <td>To persist user preferences across sessions</td>
+    <td>Device only (<code>chrome.storage.local</code>)</td>
+    <td>Nobody</td>
+  </tr>
+  <tr>
+    <td>AI API Key</td>
+    <td>User-provided Anthropic or OpenAI API key (optional)</td>
+    <td>To make AI enhancement calls on the user's behalf using their own key</td>
+    <td>Device only (<code>chrome.storage.local</code>)</td>
+    <td>Sent directly to the user's chosen AI provider (OpenAI or Anthropic) only when the user explicitly triggers an AI feature</td>
+  </tr>
+  <tr>
+    <td>Pro License Key</td>
+    <td>Gumroad license key entered by the user</td>
+    <td>To verify Pro subscription status</td>
+    <td>Device only (<code>chrome.storage.local</code>)</td>
+    <td>Sent to Gumroad's API for validation only</td>
+  </tr>
+  <tr>
+    <td>Usage Counts</td>
+    <td>Daily count of prompt injections or AI calls</td>
+    <td>To enforce free plan usage limits</td>
+    <td>Device only (<code>chrome.storage.local</code>)</td>
+    <td>Nobody</td>
+  </tr>
+</table>
+
+<h2>4. Data We Do NOT Collect</h2>
+<p>IA Squared Extensions does <strong>not</strong>:</p>
 <ul>
-  <li>Collect or transmit your personal information to any server operated by us</li>
+  <li>Collect or transmit personal information (name, email, address, phone number) to any server we operate</li>
   <li>Track your browsing history or behaviour across websites</li>
-  <li>Share any data with third parties for advertising or analytics</li>
-  <li>Use cookies or any form of tracking technology</li>
+  <li>Read the content of pages you visit beyond detecting which supported AI platform you are on</li>
+  <li>Share any data with third parties for advertising, marketing, or analytics purposes</li>
+  <li>Use cookies, pixel trackers, fingerprinting, or any other tracking technology</li>
+  <li>Sell, rent, or trade any user data</li>
+  <li>Retain any user data on developer servers — we operate no such servers</li>
 </ul>
-<h2>4. Data Stored Locally on Your Device</h2>
-<p>All data is stored exclusively in your browser's local storage (<code>chrome.storage.local</code>) and never leaves your device:</p>
+
+<h2>5. Data Use</h2>
+<p>Data stored locally on your device is used solely to operate the Extension's features: displaying your saved prompt library, applying your preferences, enforcing usage limits on the free plan, and verifying your Pro license status. No data is used for profiling, behavioural advertising, or any purpose beyond directly serving you within the Extension.</p>
+
+<h2>6. Data Sharing and Third Parties</h2>
+<p>IA Squared Extensions does not sell or share user data with any third party for commercial purposes. The only external communications initiated by the Extension are:</p>
 <ul>
-  <li><strong>Settings:</strong> Your preferences such as theme, language and feature toggles</li>
-  <li><strong>API Key:</strong> If you provide your own Anthropic or OpenAI API key, it is stored locally only</li>
-  <li><strong>License Key:</strong> Your Pro license key, stored locally for activation verification</li>
-  <li><strong>Usage Counts:</strong> Daily usage counts to enforce free plan limits</li>
+  <li><strong>AI providers (OpenAI, Anthropic):</strong> When you use AI prompt-enhancement features and have provided your own API key, your prompt text is sent directly from your browser to the selected AI provider's API. This communication is governed entirely by that provider's privacy policy. IA Squared Extensions does not see, intercept, log, or store the content of these requests or responses. See: <a href="https://openai.com/privacy" target="_blank">OpenAI Privacy Policy</a>, <a href="https://www.anthropic.com/privacy" target="_blank">Anthropic Privacy Policy</a>.</li>
+  <li><strong>Gumroad (license validation):</strong> When you activate or verify a Pro license, your license key is sent to Gumroad's API (<code>api.gumroad.com</code>) solely to confirm its validity. IA Squared Extensions does not receive or store any payment information. See: <a href="https://gumroad.com/privacy" target="_blank">Gumroad Privacy Policy</a>.</li>
 </ul>
-<h2>5. Permission Justifications</h2>
+<p>Beyond the above, no user data is shared with any other third party under any circumstances.</p>
+
+<h2>7. Permissions Justification</h2>
+<p>The Extension requests only the minimum permissions necessary to operate:</p>
 <ul>
-  <li><strong>storage:</strong> Stores the user's prompt library (titles, text, tags, usage counts), settings, API key and Pro license key locally on the device using chrome.storage.local. No data is transmitted to developer servers.</li>
-  <li><strong>tabs:</strong> Required to detect which AI platform the user is currently on (ChatGPT, Claude, Grok, Gemini, Perplexity) to apply the correct input field selectors for prompt injection.</li>
-  <li><strong>host_permissions:</strong> Required to inject the PromptVault sidebar into supported AI platforms (chat.openai.com, claude.ai, grok.com, gemini.google.com, perplexity.ai) where users type prompts.</li>
+  <li><strong>storage:</strong> Stores the user's prompt library, settings, API key, license key, and usage counts locally on the device using <code>chrome.storage.local</code>. No data is transmitted to developer servers.</li>
+  <li><strong>host_permissions (chat.openai.com, claude.ai, grok.com, gemini.google.com, perplexity.ai):</strong> Required to inject the PromptVault sidebar UI into supported AI platforms so users can browse and insert saved prompts into input fields on those pages.</li>
 </ul>
-<h2>6. AI API Calls</h2>
-<p>When you use AI features, text is sent directly from your browser to your chosen AI provider using your own API key:</p>
+
+<h2>8. Data Retention</h2>
+<p>All data stored by the Extension persists in your browser's local storage until you explicitly delete it (via the Extension's settings) or uninstall the Extension. IA Squared Extensions retains no copies of your data on any server. Uninstalling the Extension removes all locally stored data from your device.</p>
+
+<h2>9. Data Security</h2>
+<p>All data is stored using the browser's native <code>chrome.storage.local</code> API, which is sandboxed to the Extension and inaccessible to websites or other extensions. API keys are stored in local storage only and are never transmitted except directly to the user's chosen AI provider when the user explicitly invokes an AI feature.</p>
+
+<h2>10. Children's Privacy</h2>
+<p>This Extension is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided information through this Extension, please contact us and we will take appropriate action.</p>
+
+<h2>11. Your Rights</h2>
+<p>Because all data is stored locally on your device and no data is held on developer servers, you have full control over your data at all times. You may:</p>
 <ul>
-  <li><strong>Anthropic Claude API</strong> — governed by their respective privacy policy</li>
-  <li><strong>OpenAI API</strong> — governed by their respective privacy policy</li>
+  <li>View all stored data within the Extension's settings panel</li>
+  <li>Delete your prompt library and settings at any time via the Extension's settings</li>
+  <li>Uninstall the Extension to remove all locally stored data</li>
 </ul>
-<p>IA Squared Extensions does not see, intercept or store the content of these requests.</p>
-<h2>7. License Activation</h2>
-<p>When activating a Pro license, the extension communicates with Lemon Squeezy's API to validate your license key. Their handling of this data is governed by <a href="https://www.lemonsqueezy.com/privacy" target="_blank">Lemon Squeezy's Privacy Policy</a>.</p>
-<h2>8. Children's Privacy</h2>
-<p>This extension is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
-<h2>9. Contact</h2>
-<p>Questions about this Privacy Policy:<br>
+<p>For users in the European Economic Area (EEA), United Kingdom, or California, you have additional rights under GDPR, UK GDPR, and CCPA respectively. As we hold no personal data on our servers, these rights are exercised by managing data within the Extension itself. For any questions, contact us at the address below.</p>
+
+<h2>12. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date at the top of this page. Continued use of the Extension after changes constitutes acceptance of the updated policy. We encourage you to review this policy periodically.</p>
+
+<h2>13. Contact</h2>
+<p>For questions, concerns, or requests regarding this Privacy Policy or your data:<br>
+<strong>IA Squared Extensions</strong><br>
 <a href="mailto:idris.adewale.alamutu@gmail.com">idris.adewale.alamutu@gmail.com</a></p>
+
 <hr style="margin-top:48px;border-color:#e2e8f0">
 <p style="font-size:13px;color:#94a3b8;text-align:center">© 2026 IA Squared Extensions · PromptVault · All rights reserved</p>
 </body>
